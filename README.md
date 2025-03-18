@@ -1,2 +1,3 @@
 # IT2234_Practicals
-Web Services and Server Technologies
+
+Check all the Readme files inside the folders
