@@ -11,24 +11,29 @@
 
 <img width="470" alt="4" src="https://github.com/user-attachments/assets/4a749f33-b70d-4964-9641-c00d5836178a" />
 
-4.arrow function
+4.print numbers 1 to n using recursive function
+
+![Screenshot 2025-03-20 194546](https://github.com/user-attachments/assets/9896b21e-9cde-4ad0-b5a8-19906ecdc15a)
+
+
+5.arrow function
 
 <img width="472" alt="5" src="https://github.com/user-attachments/assets/7acf6cfb-34b5-4acf-885f-af886a557f06" />
 <img width="463" alt="6" src="https://github.com/user-attachments/assets/4a0c7e1c-fde9-4b8c-b407-296af5c95678" />
 
-5.multification
+6.multification
 
 <img width="452" alt="7" src="https://github.com/user-attachments/assets/05eb57b9-e648-44f0-810f-a365da68c96e" />
 
-6.rest parameters
+7.rest parameters
 
 <img width="480" alt="8" src="https://github.com/user-attachments/assets/0232981c-a437-42f8-b268-02832387536a" />
 
-7.callback function
+8.callback function
 
 <img width="514" alt="9" src="https://github.com/user-attachments/assets/42f0d2bb-f7b4-48b7-867e-dcb40af0cf23" />
 
-8.multifly two numbers
+9.multifly two numbers
 
 <img width="505" alt="10" src="https://github.com/user-attachments/assets/5ec44455-ab71-4d1e-97ea-abe86598a1bd" />
 
