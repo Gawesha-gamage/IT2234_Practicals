@@ -1,0 +1,35 @@
+ {
+        "regNo": "2021/ict/01",
+        "name": "sanjana",
+        "age": 24,
+        "course": "IT",
+		"gender":"female"
+    },
+    {
+        "regNo": "2021/ict/02",
+        "name": "pabasara",
+        "age": 24,
+        "course": "IT",
+		"gender":"female"
+    },
+    {
+        "regNo": "2021/ict/03",
+        "name": "gawesha",
+        "age": 24,
+        "course": "IT",
+		"gender":"female"
+    },
+    {
+        "regNo": "2021/ict/04",
+        "name": "nishagee",
+        "age": 23,
+        "course": "IT",
+		"gender":"female"
+    },
+    {
+        "regNo": "2021/ict/05",
+        "name": "punya",
+        "age": 23,
+        "course": "IT",
+		"gender":"female"
+    }
