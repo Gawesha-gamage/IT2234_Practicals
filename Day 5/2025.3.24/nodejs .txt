@@ -1,0 +1,54 @@
+Microsoft Windows [Version 10.0.22631.5039]
+(c) Microsoft Corporation. All rights reserved.
+
+Z:\Second Year\Second Sem\Web Services and Server Technologies\2025.3.20\myApp>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (myapp)
+version: (1.0.0)
+description: first express app
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author: dinithi
+license: (ISC)
+About to write to Z:\Second Year\Second Sem\Web Services and Server Technologies\2025.3.20\myApp\package.json:
+
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "first express app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dinithi",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) yes
+
+Z:\Second Year\Second Sem\Web Services and Server Technologies\2025.3.20\myApp>code
+
+Z:\Second Year\Second Sem\Web Services and Server Technologies\2025.3.20\myApp>code .
+
+Z:\Second Year\Second Sem\Web Services and Server Technologies\2025.3.20\myApp>npm install express
+
+added 69 packages, and audited 70 packages in 10s
+
+14 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+
+Z:\Second Year\Second Sem\Web Services and Server Technologies\2025.3.20\myApp>
