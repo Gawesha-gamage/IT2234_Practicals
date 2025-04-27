@@ -1,176 +1,48 @@
-# MATLAB Code Repository
+1.data that are inserted to the database
 
-This repository contains various MATLAB scripts demonstrating basic mathematical operations, matrix manipulations, and control structures such as loops and conditionals.
 
-## Requirements
-- MATLAB application is required to run these scripts.
+![Screenshot 2025-04-24 100947](https://github.com/user-attachments/assets/d385dfe5-214e-46cf-ab55-d3574bef1999)
 
-## Included MATLAB Scripts
 
-### 1. Basic Arithmetic Operations
-```matlab
-% Define variables
-a = 5;
-b = 10;
+2.sho the name and the age of the students and hide the id
 
-% Addition
-c = a + b;
-% Multiplication
-d = a * b;
-% Division
-e = a / b;
-% Subtraction
-f = a - b;
-```
-**Output:**
-```
-c = 15
-d = 50
-e = 0.5000
-f = -5
-```
+![Screenshot 2025-04-24 103207](https://github.com/user-attachments/assets/10b61477-f98b-4378-b9d8-0599364bd238)
 
-### 2. Matrix Creation and Operations
-```matlab
-% Define Matrices
-A = [1 2 3];
-B = [4;5;6];
-C = [2 3 4;5 6 7;8 9 10];
+3.insert more data in to the databse
 
-% Size of matrix
-size_C = size(C);
-% Sum of matrix elements
-sum_C = sum(sum(C));
-% Column-wise and row-wise sums
-col_sum = sum(C,1);
-row_sum = sum(C,2);
-```
-**Output:**
-```
-size_C = [3 3]
-sum_C = 54
-col_sum = [15 18 21]
-row_sum = [9; 18; 27]
-```
+![Screenshot 2025-04-24 103230](https://github.com/user-attachments/assets/5177e2a8-513f-4569-9f34-d13976d4208c)
 
-### 3. Finding Min and Max Elements
-```matlab
-% Column-wise minimum
-min_col = min(C);
-% Minimum of whole matrix
-min_all = min(min(C));
-% Column-wise maximum
-max_col = max(C);
-% Maximum of whole matrix
-max_all = max(max(C));
-```
-**Output:**
-```
-min_col = [2 3 4]
-min_all = 2
-max_col = [8 9 10]
-max_all = 10
-```
+4.find the students by their registration number
 
-### 4. Accessing Matrix Elements
-```matlab
-% Accessing specific elements
-second_element = C(2);
-first_row = C(1,:);
-first_column = C(:,1);
-last_element_first_row = C(1,end);
-```
-**Output:**
-```
-second_element = 5
-first_row = [2 3 4]
-first_column = [2; 5; 8]
-last_element_first_row = 4
-```
+![Screenshot 2025-04-24 103606](https://github.com/user-attachments/assets/3a23a361-22b4-4c43-9765-afc88bf65af4)
 
-### 5. Matrix Addition, Subtraction, and Multiplication
-```matlab
-A = [1 2 3 4;5 6 7 8;9 10 11 12;13 14 15 16];
-B = A; % Duplicate matrix
+5.filter the students by their gender
 
-% Element-wise Addition and Subtraction
-sum_matrix = A + B;
-diff_matrix = A - B;
+![Screenshot 2025-04-24 103647](https://github.com/user-attachments/assets/2e3a47fb-dd58-4908-b4a5-4ac03f2cfa27)
 
-% Matrix Multiplication
-prod_matrix = A * B;
-```
-**Output:**
-```
-sum_matrix =
-  2  4  6  8
- 10 12 14 16
- 18 20 22 24
- 26 28 30 32
+![Screenshot 2025-04-24 104439](https://github.com/user-attachments/assets/10ab1a84-89dc-4e45-9724-f49839552d64)
 
-diff_matrix =
-  0  0  0  0
-  0  0  0  0
-  0  0  0  0
-  0  0  0  0
+6.find one student from students whos gender is female
 
-prod_matrix =
-  90  100  110  120
- 202  228  254  280
- 314  356  398  440
- 426  484  542  600
-```
+![Screenshot 2025-04-24 104540](https://github.com/user-attachments/assets/fabaf45d-29f7-4af9-b7fc-97355ba9b514)
 
-### 6. Conditional Statements
-```matlab
-num = 4;
-if num > 0
-    disp('The Number Is Positive')
-else
-    disp('The Number Is Negative')
-end
-```
-**Output:**
-```
-The Number Is Positive
-```
+7.find the students whos age is grater than a given age
 
-### 7. Checking Odd or Even Number
-```matlab
-if mod(num,2) == 0
-    disp('The Number Is Even')
-else
-    disp('The Number Is Odd')
-end
-```
-**Output:**
-```
-The Number Is Even
-```
+![Screenshot 2025-04-24 105019](https://github.com/user-attachments/assets/1460d628-5160-4d47-95ab-5122c28cb9bf)
 
-### 8. While Loop: Printing Numbers 1 to 5
-```matlab
-a = 1;
-while a <= 5
-    disp (a)
-    a = a + 1;
-end
-```
-**Output:**
-```
-1
-2
-3
-4
-5
-```
 
-## How to Run the Scripts
-1. Open MATLAB.
-2. Copy and paste the desired script into the MATLAB command window or save it as a `.m` file and run it.
-3. Observe the output in the command window.
+8.sort the students according to their gpa
 
-## Conclusion
-These MATLAB scripts demonstrate fundamental concepts such as arithmetic operations, matrix manipulation, conditional statements, and loops. They serve as an excellent introduction to MATLAB programming.
+![Screenshot 2025-04-24 110506](https://github.com/user-attachments/assets/29a19e6f-e79c-499e-862a-1bcc4f6c5b9e)
+
+![Screenshot 2025-04-24 110448](https://github.com/user-attachments/assets/a1103fe5-2a20-4c44-91c9-0c1ab98415bb)
+
+9.find students who do not have skills in python show their name and other skills and sort by age
+
+![Screenshot 2025-04-24 111946](https://github.com/user-attachments/assets/69ff076f-9c4a-4aab-9dfc-e6ce20bd0dcc)
+
+
+
+
 
 
