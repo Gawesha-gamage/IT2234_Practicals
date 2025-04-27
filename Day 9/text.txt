@@ -1,0 +1,427 @@
+db["students"].find()
+show databases
+admin   40.00 KiB
+config  84.00 KiB
+local   80.00 KiB
+unidb    8.00 KiB
+show collections
+show collections
+use unidb
+switched to db unidb
+show collections
+students
+use local
+switched to db local
+use unidb
+switched to db unidb
+drop unidb
+
+
+1)delete a database
+
+delete unidb
+true
+show collections
+students
+delete students
+true
+
+2)insert a one data for the database
+
+db.students.insertOne(
+{
+"regno": "2021IT015",
+  "name": "jade",
+  "age": 21,
+  "degree": "Bio",
+  "gpa": 3.1,
+  "skill": [
+    "JS",
+    "MongoDb",
+    "Node"
+  ],
+  "gender": "male"
+
+
+}
+
+)
+{
+  acknowledged: true,
+  insertedId: ObjectId('6809c2f9b4472a6a6bbc14ae')
+}
+unidb
+
+3)insert more data in to the database 
+
+db.students.insertMany(
+[
+{"regno": "2021IT015",
+  "name": "jadey",
+  "age": 20,
+  "degree": "IT",
+  "gpa": 3.3,
+  "skill": [
+    "JS",
+    "MongoDb",
+    "Node"
+  ],
+  "gender": "female"
+},
+{"regno": "2021IT007",
+  "name": "grace",
+  "age": 25,
+  "degree": "IT",
+  "gpa": 3.1,
+  "skill": [
+    "python",
+    "MongoDb",
+    "Node"
+  ],
+  "gender": "female"
+}
+]
+
+
+
+
+
+
+
+
+)
+db.students.insertMany(
+[
+{"regno": "2021IT015",
+  "name": "jadey",
+  "age": 20,
+  "degree": "IT",
+  "gpa": 3.3,
+  "skill": [
+    "JS",
+    "MongoDb",
+    "Node"
+  ],
+  "gender": "female"
+},
+{"regno": "2021IT007",
+  "name": "grace",
+  "age": 25,
+  "degree": "IT",
+  "gpa": 3.1,
+  "skill": [
+    "python",
+    "MongoDb",
+    "Node"
+  ],
+  "gender": "female"
+}
+]
+
+
+
+
+
+
+
+
+)
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6809c408b4472a6a6bbc14af'),
+    '1': ObjectId('6809c408b4472a6a6bbc14b0')
+  }
+}
+
+4)find the students whos gender is female
+
+db.students.find({"gender":"female"})
+{
+  _id: ObjectId('6809c10c3f628ba5e106f6ff'),
+  regno: '2021IT028',
+  name: 'gawesha',
+  age: 25,
+  degree: 'IT',
+  gpa: 3,
+  skill: [
+    'JS',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'female'
+}
+{
+  _id: ObjectId('6809c19a3f628ba5e106f701'),
+  regno: '2021IT011',
+  name: 'kaliy',
+  age: 21,
+  degree: 'Bio',
+  gpa: 3.1,
+  skill: [
+    'JS',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'female'
+}
+{
+  _id: ObjectId('6809c408b4472a6a6bbc14af'),
+  regno: '2021IT015',
+  name: 'jadey',
+  age: 20,
+  degree: 'IT',
+  gpa: 3.3,
+  skill: [
+    'JS',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'female'
+}
+{
+  _id: ObjectId('6809c408b4472a6a6bbc14b0'),
+  regno: '2021IT007',
+  name: 'grace',
+  age: 25,
+  degree: 'IT',
+  gpa: 3.1,
+  skill: [
+    'python',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'female'
+}
+
+
+6)find a one student from the database whos gender is female
+
+db.students.findOne({"gender":"female"})
+{
+  _id: ObjectId('6809c10c3f628ba5e106f6ff'),
+  regno: '2021IT028',
+  name: 'gawesha',
+  age: 25,
+  degree: 'IT',
+  gpa: 3,
+  skill: [
+    'JS',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'female'
+}
+                     
+7)find the students whos age is grater than 21
+
+db.students.find({"age":{$gt:21}})
+{
+  _id: ObjectId('6809be0f3f628ba5e106f6fc'),
+  regno: '2021IT001',
+  name: 'kolins',
+  age: 25,
+  degree: 'IT',
+  gpa: 3.2,
+  skill: [
+    'JS',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'male'
+}
+{
+  _id: ObjectId('6809c10c3f628ba5e106f6ff'),
+  regno: '2021IT028',
+  name: 'gawesha',
+  age: 25,
+  degree: 'IT',
+  gpa: 3,
+  skill: [
+    'JS',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'female'
+}
+{
+  _id: ObjectId('6809c15d3f628ba5e106f700'),
+  regno: '2021IT002',
+  name: 'arosh',
+  age: 22,
+  degree: 'Maths',
+  gpa: 3.8,
+  skill: [
+    'JS',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'male'
+}
+{
+  _id: ObjectId('6809c1b83f628ba5e106f702'),
+  regno: '2021IT034',
+  name: 'ron',
+  age: 24,
+  degree: 'Maths',
+  gpa: 3,
+  skill: [
+    'JS',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'male'
+}
+{
+  _id: ObjectId('6809c408b4472a6a6bbc14b0'),
+  regno: '2021IT007',
+  name: 'grace',
+  age: 25,
+  degree: 'IT',
+  gpa: 3.1,
+  skill: [
+    'python',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'female'
+}
+
+8) find the student who has skills in python
+
+
+db.students.find({"skill":"python"})
+{
+  _id: ObjectId('6809c408b4472a6a6bbc14b0'),
+  regno: '2021IT007',
+  name: 'grace',
+  age: 25,
+  degree: 'IT',
+  gpa: 3.1,
+  skill: [
+    'python',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'female'
+}
+
+db.students.find({'degree':'IT'}).sort({'gpa':1})
+{
+  _id: ObjectId('6809c10c3f628ba5e106f6ff'),
+  regno: '2021IT028',
+  name: 'gawesha',
+  age: 25,
+  degree: 'IT',
+  gpa: 3,
+  skill: [
+    'JS',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'female'
+}
+{
+  _id: ObjectId('6809c408b4472a6a6bbc14b0'),
+  regno: '2021IT007',
+  name: 'grace',
+  age: 25,
+  degree: 'IT',
+  gpa: 3.1,
+  skill: [
+    'python',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'female'
+}
+{
+  _id: ObjectId('6809be0f3f628ba5e106f6fc'),
+  regno: '2021IT001',
+  name: 'kolins',
+  age: 25,
+  degree: 'IT',
+  gpa: 3.2,
+  skill: [
+    'JS',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'male'
+}
+{
+  _id: ObjectId('6809c408b4472a6a6bbc14af'),
+  regno: '2021IT015',
+  name: 'jadey',
+  age: 20,
+  degree: 'IT',
+  gpa: 3.3,
+  skill: [
+    'JS',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'female'
+}
+
+9)sort the students by their gpa
+
+db.students.find({"gender":"male"}).sort({"age":1})
+{
+  _id: ObjectId('6809c2f9b4472a6a6bbc14ae'),
+  regno: '2021IT015',
+  name: 'jade',
+  age: 21,
+  degree: 'Bio',
+  gpa: 3.1,
+  skill: [
+    'JS',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'male'
+}
+{
+  _id: ObjectId('6809c15d3f628ba5e106f700'),
+  regno: '2021IT002',
+  name: 'arosh',
+  age: 22,
+  degree: 'Maths',
+  gpa: 3.8,
+  skill: [
+    'JS',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'male'
+}
+{
+  _id: ObjectId('6809c1b83f628ba5e106f702'),
+  regno: '2021IT034',
+  name: 'ron',
+  age: 24,
+  degree: 'Maths',
+  gpa: 3,
+  skill: [
+    'JS',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'male'
+}
+{
+  _id: ObjectId('6809be0f3f628ba5e106f6fc'),
+  regno: '2021IT001',
+  name: 'kolins',
+  age: 25,
+  degree: 'IT',
+  gpa: 3.2,
+  skill: [
+    'JS',
+    'MongoDb',
+    'Node'
+  ],
+  gender: 'male'
+}
+unidb
+
