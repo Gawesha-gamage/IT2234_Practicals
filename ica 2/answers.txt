@@ -1,0 +1,25 @@
+1.) db.students.insertMany([{}]);
+
+2.) db.grades.insertMany([{}]);
+
+3)db.students.find(
+    { gender: "Female" }, 
+    { name: 1, age: 1, gender: 1, _id: 0 }
+);
+
+4.)db.students.find(
+    { age: { $lt: 22 }, enrollmentYear: { $gt: 2020 } }
+);
+
+5.)db.grades.find(
+    { studentId: ObjectId("64b1fcd1f4a13a001e3d41a1") }
+);
+
+6.)db.grades.countDocuments(
+    { subject: "Mathematics" }
+);
+
+
+7.)db.grades.find(
+    { term: "Fall 2022" }
+);
